@@ -1,6 +1,7 @@
+//Variables
 var timing=0;
 var change=50;
-
+//Function for start button
 function runningStart()
 {
     document.getElementById("taoSpin").src="tao-running.gif"
@@ -16,13 +17,13 @@ function runningStart()
     },1)
     
 }
-
+//Function for stop button
 function runningStop()
 {
     clearInterval(timing)
     document.getElementById("taoSpin").src="tao-idle.gif"
 }
-
+//Function for reset button
 function runningRestart()
 {
     window.location.reload();
